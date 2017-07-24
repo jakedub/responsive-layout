@@ -46,7 +46,7 @@ a:hover{
     color: blue;
 }
 
-header{ 
+header{
     padding-bottom: 15px;
     margin-bottom: 20px;
     border-bottom: 2px solid #ddddff;
@@ -75,4 +75,97 @@ header{
 
 #main_nav a:hover{
     background: #ddddff;
+}
+
+#main_content {
+  background-color:#ddffff;
+}
+
+ul{
+    /*margin: 0;
+    padding: 0;*/
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+footer{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background: orange;
+}
+
+footer a{
+  padding: 10px;
+}
+
+#sidebar_content {
+  background: #ffffdd;
+}
+
+#sidebar_content ul{
+    margin: 0;*/
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+/*Tablet Display*/
+
+@media screen and ( min-width: 700px ){
+  #main_nav{
+    display: flex;
+    justify-content: space-around;
+  }
+  #main_nav a{
+    background-color: #ffdddd;
+    border-bottom: 0;
+    display: inline;
+    padding: 2%;
+    margin: 2px;
+    flex: 1 1 33.3%;
+  }
+}
+
+/*Desktop Styling*/
+
+@media screen and ( min-width: 1000px ){
+  header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+
+  #main_nav a{
+    margin: 2px;
+    flex: 1 1 33.3%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  #main_content {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #main_content div:first-child{
+    flex-basis: 75%;
+  }
+
+  #sidebar_content{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  #sidebar_content div{
+    flex-basis: 33%;
+  }
 }
