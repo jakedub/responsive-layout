@@ -103,17 +103,19 @@ footer a{
 
 #sidebar_content {
   background: #ffffdd;
+  margin-bottom: 10px;
 }
 
-#sidebar_content ul{
-    margin: 0;*/
-    padding: 0;
+#sidebar_content div{
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
+    flex-wrap: wrap;
+    border-bottom: 10px solid white;
 }
+
+/*#sidebar_content div ul{
+  border-bottom: 5px solid white;
+}*/
 
 /*Tablet Display*/
 
@@ -137,17 +139,15 @@ footer a{
 @media screen and ( min-width: 1000px ){
   header{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
   }
-
-  #main_nav a{
-    margin: 2px;
-    flex: 1 1 33.3%;
-    padding-left: 50px;
-    padding-right: 50px;
+  #logo{
+    flex: 2;
   }
+#main_nav{
+  display: flex;
+  flex: 4;
+  align-items: center;
+}
 
   #main_content {
     display: flex;
